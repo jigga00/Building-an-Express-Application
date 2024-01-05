@@ -1,0 +1,17 @@
+html
+  head
+    title= title
+  body
+    h1 #{title}
+    p
+      a(href='/') Go to Home Page
+      | &nbsp;&nbsp;&nbsp;
+      a(href='/about') Go to About Page
+    form(action='/form' method='post')
+      label(for='name') Name:
+      input(type='text' name='name' required)
+      br
+      label(for='email') Email:
+      input(type='email' name='email' required)
+      br
+      button(type='submit') Submit
